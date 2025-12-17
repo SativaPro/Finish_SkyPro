@@ -1,0 +1,16 @@
+{
+    "productShareButton": "xpath:: //android.widget.Button[contains(@content-desc, 'Поделиться')]",
+    "productArticul": "xpath:: //*[contains(@resource-id, 'tvArticul')]",
+    "shelbikView": "xpath:: //android.widget.TextView[contains(@resource-id, 'tvName') and @text=\"{shelbikText}\"]",
+    "shelbikClick": "xpath:: //android.widget.TextView[@text=\"{shelbikText}\"]/../..",
+    "bottomSheetVisible": "xpath:: //*[contains(@resource-id, 'design_bottom_sheet')]",
+    "bottomSheetTitleExact": "xpath:: //android.widget.TextView[contains(@resource-id, 'tvTitle')]",
+    "bottomSheetDescription": "xpath:: //*[contains(@resource-id, 'tvDescription')]",
+    "bottomSheetDetailsClickableText": "xpath:: //*[contains(@resource-id, 'tvDescription')]",
+    "bottomSheetOkButton": "xpath:: //*[contains(@resource-id, 'btnOk')]",
+    "webViewContainer": "xpath:: //android.view.View[@resource-id=\"main-header\"]",
+    "webViewBackButton": "xpath:: //android.widget.ImageButton",
+    "webViewPromoTitle": "xpath:: //android.widget.TextView[contains(@resource-id, 'titleText')]",
+    "sslDialog": "xpath:: //android.widget.TextView[@resource-id=\"android:id/message\" and contains(@text, 'SSL')]",
+    "sslContinueButton": "xpath:: //android.widget.Button[@resource-id=\"android:id/button1\"]"
+}
