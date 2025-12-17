@@ -1,0 +1,56 @@
+server:
+  name: $APPIUM_SERVER|remote
+  address: $APPIUM_ADDRESS|http://localhost:4723
+
+devices:
+  android:
+    - name: $DEVICE_ANDROID_NAME|"Pixel 5 API 35"
+      deviceId: $DEVICE_ANDROID_ID|emulator-5554
+      platform: Android
+      platformVersion: $DEVICE_ANDROID_VERSION|"15" #"14"
+      deviceType: $DEVICE_ANDROID_TYPE|emulator # emulator or real
+      automationName: UIAutomator2
+
+  ios:
+    - name: $DEVICE_IOS_NAME|"iPhone 16 Pro"
+      platformVersion: $DEVICE_IOS_VERSION|"18.1"
+      deviceId: $DEVICE_IOS_ID|ххххх-хххххх-хххххххх
+      platform: iOS
+      deviceType: $DEVICE_IOS_TYPE|simulator
+      automationName: XCUITest
+
+
+applications:
+  android:
+    appPackage: $APP_ANDROID_PACKAGE
+    appActivity: $APP_ANDROID_ACTIVITY
+    appPath: $APP_ANDROID_PATH
+    appType: $APP_ANDROID_TYPE
+    appVersion: $APP_VERSION|Latest
+    appLocalRun: True
+    appStorage: C:\Users\XXX\Downloads\APK\
+
+
+
+    release: $ANDROID_RELEASE
+    branch: $ANDROID_BRANCH
+  ios:
+    appPackage: $APP_IOS_PACKAGE
+    appActivity: $APP_IOS_ACTIVITY
+    appPath: $APP_IOS_PATH
+    appType: $APP_IOS_TYPE
+    appVersion: $APP_VERSION|Latest
+    appLocalRun: True
+    appStorage: C:\Users\XXX\Downloads\APK\
+
+
+    release: $IOS_RELEASE
+    branch: $IOS_BRANCH
+
+
+
+### DEV_RE, PRE_PROD, PROD OR FROM ENV
+env: $ENV|PROD
+
+### Москва OR FROM CITY
+city: $CITY|Москва

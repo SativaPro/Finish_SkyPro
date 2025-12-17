@@ -4,6 +4,7 @@ Appium-Python-Client==4.2.0
 attrs==25.4.0
 certifi==2025.11.12
 charset-normalizer==3.4.4
+envyaml==1.10.211231
 flake8==7.3.0
 h11==0.16.0
 idna==3.11
